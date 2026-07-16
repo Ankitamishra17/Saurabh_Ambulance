@@ -75,7 +75,7 @@ export default function OurStory() {
         <div className="story-visual relative max-w-lg mx-auto w-full">
           <div className="relative rounded-[2rem] bg-[#01203f] aspect-[4/3] overflow-hidden shadow-xl">
             <Image
-              src="https://images.unsplash.com/photo-1619025873875-59dfdd2bbbd6?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="/urgentcare6.jpeg"
               alt="Saurabh Ambulance vehicle on emergency response duty"
               fill
               sizes="(max-width: 1024px) 90vw, 500px"

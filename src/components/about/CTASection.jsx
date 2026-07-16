@@ -12,7 +12,7 @@ if (typeof window !== "undefined") {
 
 // Replace with your own asset in /public, e.g. "/images/emergency-cta.jpg"
 const BG_IMAGE =
-  "https://images.unsplash.com/photo-1587745416684-47953f16f02f?q=80&w=2000&auto=format&fit=crop";
+  "/urgentcare1.jpeg";
 
 const PHONE = "+919996453141";
 

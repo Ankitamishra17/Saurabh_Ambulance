@@ -7,7 +7,7 @@ import { ChevronRight } from "lucide-react";
 
 // Replace with a real photo of your team/fleet once available.
 const BG_IMAGE =
-  "https://images.pexels.com/photos/28123708/pexels-photo-28123708.jpeg";
+  "/urgentcare1.jpeg";
 
 export default function AboutHero() {
   const containerRef = useRef(null);

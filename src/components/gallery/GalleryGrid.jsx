@@ -14,21 +14,21 @@ import {
   Video,
 } from "lucide-react";
 
-const categories = ["All", "Fleet", "Emergency Response", "Our Team"];
+const categories = ["All", "Fleet", "Emergency Response", ];
 
 // 👉 ADD YOUR IMAGE LINKS HERE.
 // Put each photo in /public (e.g. /public/gallery/unit-04.jpg) and set `image: "/gallery/unit-04.jpg"`.
 // Leave `image: null` and it will fall back to the gradient + icon placeholder shown now.
 const photoItems = [
-  { id: "p1", category: "Fleet", title: "ALS Ambulance – Unit 04", icon: Ambulance, gradient: "from-[#01203f] to-[#0a3866]", image: "https://images.pexels.com/photos/7527770/pexels-photo-7527770.jpeg" },
-  { id: "p2", category: "Emergency Response", title: "On-Site Response, Sector 62", icon: HeartPulse, gradient: "from-[#b61416] to-[#7d0e10]", image: "https://images.pexels.com/photos/28123708/pexels-photo-28123708.jpeg" },
-  { id: "p3", category: "Our Team", title: "Paramedic Team Briefing", icon: Users, gradient: "from-[#01203f] to-[#3a4a63]", image: "https://images.pexels.com/photos/27914835/pexels-photo-27914835.jpeg"},
-  { id: "p4", category: "Fleet", title: "BLS Ambulance – Unit 09", icon: Ambulance, gradient: "from-[#0a3866] to-[#01203f]", image: "https://images.pexels.com/photos/6520130/pexels-photo-6520130.jpeg"},
-  // { id: "p5", category: "Events", title: "Wedding Standby Coverage", icon: CalendarClock, gradient: "from-[#b61416] to-[#01203f]", image: null },
-  { id: "p6", category: "Emergency Response", title: "Highway Rescue Operation", icon: HeartPulse, gradient: "from-[#7d0e10] to-[#b61416]", image: "https://images.pexels.com/photos/6754186/pexels-photo-6754186.jpeg" },
-  { id: "p7", category: "Our Team", title: "Training Session", icon: Users, gradient: "from-[#3a4a63] to-[#01203f]", image: "https://images.pexels.com/photos/35831388/pexels-photo-35831388.jpeg"},
-  // { id: "p8", category: "Fleet", title: "Full Fleet Lineup", icon: Ambulance, gradient: "from-[#01203f] to-[#b61416]", image: null },
-  // { id: "p9", category: "Events", title: "Corporate Event Standby", icon: CalendarClock, gradient: "from-[#01203f] to-[#0a3866]", image: null },
+  { id: "p1", category: "Fleet", title: "ALS Ambulance – Unit 04", icon: Ambulance, gradient: "from-[#01203f] to-[#0a3866]", image: "/urgentcare1.jpeg" },
+  { id: "p2", category: "Emergency Response", title: "On-Site Response, ", icon: HeartPulse, gradient: "from-[#b61416] to-[#7d0e10]", image: "/urgentcare10.jpeg" },
+  { id: "p3", category: "fleet", title: "Paramedic Team Briefing", icon: Users, gradient: "from-[#01203f] to-[#3a4a63]", image: "/urgentcare3.jpeg"},
+  { id: "p4", category: "Fleet", title: "BLS Ambulance – Unit 09", icon: Ambulance, gradient: "from-[#0a3866] to-[#01203f]", image: "/urgentcare4.jpeg"},
+  { id: "p5", category: "Emergency Response", title: " Ambulance", icon: CalendarClock, gradient: "from-[#b61416] to-[#01203f]", image: "/urgentcare7.jpeg" },
+  { id: "p6", category: "Emergency Response", title: " Ambulance", icon: HeartPulse, gradient: "from-[#7d0e10] to-[#b61416]", image: "/urgentcare5.jpeg" },
+  { id: "p7", category: "fleet", title: " Ambulance", icon: Users, gradient: "from-[#3a4a63] to-[#01203f]", image: "/urgentcare6.jpeg"},
+  { id: "p8", category: "Fleet", title: " Ambulance", icon: Ambulance, gradient: "from-[#01203f] to-[#b61416]", image: "/urgentcare8.jpeg" },
+  { id: "p9", category: "Fleet", title: " Ambulance", icon: CalendarClock, gradient: "from-[#01203f] to-[#0a3866]", image: "/urgentcare2.jpeg" },
 ];
 
 // 👉 For videos, `image` is the thumbnail/poster shown in the grid (the play button overlays on top of it).
