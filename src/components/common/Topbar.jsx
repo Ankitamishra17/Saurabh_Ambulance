@@ -22,11 +22,11 @@ export default function TopBar() {
           </a>
 
           <a
-            href="mailto:help@rapidcareambulance.in"
+            href="mailto:help@saurabhambulance.in"
             className="hidden md:flex items-center gap-1.5 hover:text-[#f2a0a0] transition-colors"
           >
             <Mail size={14} />
-            <span>help@rapidcareambulance.in</span>
+            <span>help@saurabhambulance.in</span>
           </a>
         </div>
 

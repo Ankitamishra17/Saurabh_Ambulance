@@ -5,15 +5,18 @@ import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 
 // Replace with a real photo of your office/dispatch center once available.
-const BG_IMAGE = "https://picsum.photos/seed/saurabh-contact-hero/1920/1080";
+const BG_IMAGE = "/banner1.webp";
 
 export default function ContactHero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background image */}
-      <div
+      {/* Background image with slow Ken Burns zoom */}
+      <motion.div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${BG_IMAGE})` }}
+        initial={{ scale: 1 }}
+        animate={{ scale: 1.12 }}
+        transition={{ duration: 12, ease: "easeOut" }}
       />
       {/* Overlay for readability */}
       <div className="absolute inset-0 bg-[#01203f]/85" />

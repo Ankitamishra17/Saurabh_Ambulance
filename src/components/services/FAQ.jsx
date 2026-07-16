@@ -82,7 +82,7 @@ function FAQItem({ item, isOpen, onToggle, index }) {
 }
 
 export default function ServiceFAQ() {
-  const [openIndex, setOpenIndex] = useState(0);
+  const [openIndex, setOpenIndex] = useState();
 
   const leftColumn = faqs.slice(0, 3);
   const rightColumn = faqs.slice(3, 6);

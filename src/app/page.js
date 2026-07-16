@@ -6,7 +6,7 @@ import WhyChooseUs from "@/components/home/WhyChoose";
 import Testimonial from "@/components/home/Testimonial";
 
 export const metadata = {
-  title: "Saurabh Ambulance | 24/7 Emergency Ambulance Service in Delhi NCR",
+  title: "Saurabh Ambulance | 24/7 Emergency Ambulance Service in New Delhi",
   description:
     "Saurabh Ambulance provides 24/7 emergency and non-emergency ambulance services across Delhi NCR — ALS/BLS equipped vehicles, trained paramedics, and rapid response under 15 minutes. Call now for immediate assistance.",
 };

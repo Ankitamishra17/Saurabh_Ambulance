@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Ambulance,
@@ -13,26 +14,29 @@ import {
   Video,
 } from "lucide-react";
 
-const categories = ["All", "Fleet", "Emergency Response", "Our Team", "Events"];
+const categories = ["All", "Fleet", "Emergency Response", "Our Team"];
 
-// Replace `gradient` + `icon` with real <img src="..."> / <video> sources once photos/videos are available.
+// 👉 ADD YOUR IMAGE LINKS HERE.
+// Put each photo in /public (e.g. /public/gallery/unit-04.jpg) and set `image: "/gallery/unit-04.jpg"`.
+// Leave `image: null` and it will fall back to the gradient + icon placeholder shown now.
 const photoItems = [
-  { id: "p1", category: "Fleet", title: "ALS Ambulance – Unit 04", icon: Ambulance, gradient: "from-[#01203f] to-[#0a3866]" },
-  { id: "p2", category: "Emergency Response", title: "On-Site Response, Sector 62", icon: HeartPulse, gradient: "from-[#b61416] to-[#7d0e10]" },
-  { id: "p3", category: "Our Team", title: "Paramedic Team Briefing", icon: Users, gradient: "from-[#01203f] to-[#3a4a63]" },
-  { id: "p4", category: "Fleet", title: "BLS Ambulance – Unit 09", icon: Ambulance, gradient: "from-[#0a3866] to-[#01203f]" },
-  { id: "p5", category: "Events", title: "Wedding Standby Coverage", icon: CalendarClock, gradient: "from-[#b61416] to-[#01203f]" },
-  { id: "p6", category: "Emergency Response", title: "Highway Rescue Operation", icon: HeartPulse, gradient: "from-[#7d0e10] to-[#b61416]" },
-  { id: "p7", category: "Our Team", title: "Training Session", icon: Users, gradient: "from-[#3a4a63] to-[#01203f]" },
-  { id: "p8", category: "Fleet", title: "Full Fleet Lineup", icon: Ambulance, gradient: "from-[#01203f] to-[#b61416]" },
-  { id: "p9", category: "Events", title: "Corporate Event Standby", icon: CalendarClock, gradient: "from-[#01203f] to-[#0a3866]" },
+  { id: "p1", category: "Fleet", title: "ALS Ambulance – Unit 04", icon: Ambulance, gradient: "from-[#01203f] to-[#0a3866]", image: "https://images.pexels.com/photos/7527770/pexels-photo-7527770.jpeg" },
+  { id: "p2", category: "Emergency Response", title: "On-Site Response, Sector 62", icon: HeartPulse, gradient: "from-[#b61416] to-[#7d0e10]", image: "https://images.pexels.com/photos/28123708/pexels-photo-28123708.jpeg" },
+  { id: "p3", category: "Our Team", title: "Paramedic Team Briefing", icon: Users, gradient: "from-[#01203f] to-[#3a4a63]", image: "https://images.pexels.com/photos/27914835/pexels-photo-27914835.jpeg"},
+  { id: "p4", category: "Fleet", title: "BLS Ambulance – Unit 09", icon: Ambulance, gradient: "from-[#0a3866] to-[#01203f]", image: "https://images.pexels.com/photos/6520130/pexels-photo-6520130.jpeg"},
+  // { id: "p5", category: "Events", title: "Wedding Standby Coverage", icon: CalendarClock, gradient: "from-[#b61416] to-[#01203f]", image: null },
+  { id: "p6", category: "Emergency Response", title: "Highway Rescue Operation", icon: HeartPulse, gradient: "from-[#7d0e10] to-[#b61416]", image: "https://images.pexels.com/photos/6754186/pexels-photo-6754186.jpeg" },
+  { id: "p7", category: "Our Team", title: "Training Session", icon: Users, gradient: "from-[#3a4a63] to-[#01203f]", image: "https://images.pexels.com/photos/35831388/pexels-photo-35831388.jpeg"},
+  // { id: "p8", category: "Fleet", title: "Full Fleet Lineup", icon: Ambulance, gradient: "from-[#01203f] to-[#b61416]", image: null },
+  // { id: "p9", category: "Events", title: "Corporate Event Standby", icon: CalendarClock, gradient: "from-[#01203f] to-[#0a3866]", image: null },
 ];
 
+// 👉 For videos, `image` is the thumbnail/poster shown in the grid (the play button overlays on top of it).
 const videoItems = [
-  { id: "v1", category: "Emergency Response", title: "Rapid Dispatch In Action", icon: HeartPulse, gradient: "from-[#b61416] to-[#7d0e10]" },
-  { id: "v2", category: "Fleet", title: "Inside Our ALS Ambulance", icon: Ambulance, gradient: "from-[#01203f] to-[#0a3866]" },
-  { id: "v3", category: "Our Team", title: "Meet Our Paramedics", icon: Users, gradient: "from-[#3a4a63] to-[#01203f]" },
-  { id: "v4", category: "Events", title: "Event Standby Highlights", icon: CalendarClock, gradient: "from-[#01203f] to-[#b61416]" },
+  { id: "v1", category: "Emergency Response", title: "Rapid Dispatch In Action", icon: HeartPulse, gradient: "from-[#b61416] to-[#7d0e10]", image: null },
+  { id: "v2", category: "Fleet", title: "Inside Our ALS Ambulance", icon: Ambulance, gradient: "from-[#01203f] to-[#0a3866]", image: null },
+  { id: "v3", category: "Our Team", title: "Meet Our Paramedics", icon: Users, gradient: "from-[#3a4a63] to-[#01203f]", image: null },
+  { id: "v4", category: "Events", title: "Event Standby Highlights", icon: CalendarClock, gradient: "from-[#01203f] to-[#b61416]", image: null },
 ];
 
 export default function GalleryGrid() {
@@ -52,7 +56,7 @@ export default function GalleryGrid() {
         {/* Photos / Videos toggle */}
         <div className="flex justify-center mb-8">
           <div className="relative inline-flex bg-gray-100 rounded-full p-1.5">
-            {["photos", "videos"].map((type) => (
+            {["photos",].map((type) => (
               <button
                 key={type}
                 onClick={() => setMediaType(type)}
@@ -101,7 +105,7 @@ export default function GalleryGrid() {
           className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           <AnimatePresence mode="popLayout">
-            {filteredItems.map(({ id, title, icon: Icon, gradient, category }, i) => (
+            {filteredItems.map(({ id, title, icon: Icon, gradient, category, image }, i) => (
               <motion.button
                 key={id}
                 layout
@@ -109,9 +113,23 @@ export default function GalleryGrid() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.4, delay: i * 0.05 }}
-                onClick={() => setLightboxItem({ id, title, icon: Icon, gradient, category, isVideo: mediaType === "videos" })}
-                className={`group relative aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br ${gradient} text-left`}
+                onClick={() =>
+                  setLightboxItem({ id, title, icon: Icon, gradient, category, image, isVideo: mediaType === "videos" })
+                }
+                className={`group relative aspect-[4/3] rounded-2xl overflow-hidden text-left ${
+                  image ? "bg-gray-100" : `bg-gradient-to-br ${gradient}`
+                }`}
               >
+                {image && (
+                  <Image
+                    src={image}
+                    alt={title}
+                    fill
+                    sizes="(max-width: 768px) 50vw, 33vw"
+                    className="object-cover"
+                  />
+                )}
+
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
 
                 <div className="absolute inset-0 flex items-center justify-center">
@@ -120,7 +138,7 @@ export default function GalleryGrid() {
                       <Play size={22} className="text-white fill-white ml-0.5" />
                     </div>
                   ) : (
-                    <Icon size={44} className="text-white/30" strokeWidth={1.2} />
+                    !image && <Icon size={44} className="text-white/30" strokeWidth={1.2} />
                   )}
                 </div>
 
@@ -160,8 +178,20 @@ export default function GalleryGrid() {
               exit={{ opacity: 0, scale: 0.9 }}
               transition={{ duration: 0.3 }}
               onClick={(e) => e.stopPropagation()}
-              className={`relative w-full max-w-2xl aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br ${lightboxItem.gradient} flex items-center justify-center`}
+              className={`relative w-full max-w-2xl aspect-[4/3] rounded-2xl overflow-hidden flex items-center justify-center ${
+                lightboxItem.image ? "bg-gray-900" : `bg-gradient-to-br ${lightboxItem.gradient}`
+              }`}
             >
+              {lightboxItem.image && (
+                <Image
+                  src={lightboxItem.image}
+                  alt={lightboxItem.title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 700px"
+                  className="object-cover"
+                />
+              )}
+
               <button
                 onClick={() => setLightboxItem(null)}
                 className="absolute top-4 right-4 flex items-center justify-center w-10 h-10 rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors z-10"
@@ -170,11 +200,13 @@ export default function GalleryGrid() {
               </button>
 
               {lightboxItem.isVideo ? (
-                <div className="flex items-center justify-center w-20 h-20 rounded-full bg-white/20 backdrop-blur-sm">
+                <div className="relative flex items-center justify-center w-20 h-20 rounded-full bg-white/20 backdrop-blur-sm">
                   <Play size={30} className="text-white fill-white ml-1" />
                 </div>
               ) : (
-                <lightboxItem.icon size={80} className="text-white/30" strokeWidth={1} />
+                !lightboxItem.image && (
+                  <lightboxItem.icon size={80} className="text-white/30" strokeWidth={1} />
+                )
               )}
 
               <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent">

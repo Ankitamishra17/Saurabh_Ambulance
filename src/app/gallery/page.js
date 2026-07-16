@@ -2,7 +2,7 @@
 
 import GalleryHero from "@/components/gallery/GalleryHero";
 import GalleryGrid from "@/components/gallery/GalleryGrid";
-import Contact from "@/components/home/Contact";
+// import Contact from "@/components/home/Contact";
 
 export const metadata = {
   title: "Gallery | Saurabh Ambulance",
@@ -15,7 +15,7 @@ export default function GalleryPage() {
     <main>
       <GalleryHero />
       <GalleryGrid />
-      <Contact />
+      {/* <Contact /> */}
     </main>
   );
 }

@@ -116,14 +116,10 @@ export default function Footer() {
                 target={label === "WhatsApp" ? "_blank" : undefined}
                 rel={label === "WhatsApp" ? "noopener noreferrer" : undefined}
                 aria-label={label}
-                style={{ "--brand-color": color }}
-                className="flex items-center justify-center w-9 h-9 rounded-full bg-white/5 transition-colors duration-300 hover:bg-[var(--brand-color)] group"
+                style={{ backgroundColor: `${color}1A` }}
+                className="flex items-center justify-center w-9 h-9 rounded-full transition-transform duration-300 hover:scale-110"
               >
-                <Icon
-                  size={16}
-                  style={{ color: "var(--brand-color)" }}
-                  className="group-hover:text-white transition-colors duration-300"
-                />
+                <Icon size={16} style={{ color }} />
               </a>
             ))}
           </div>
