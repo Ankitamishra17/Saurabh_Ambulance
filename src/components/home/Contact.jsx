@@ -26,7 +26,7 @@ export default function CTA() {
 
         <div className="flex flex-wrap items-center justify-center gap-4 mt-9">
           <a
-            href="tel:+911800123456"
+            href="tel:+919996453141"
             className="flex items-center gap-2 bg-[#b61416] text-white font-heading font-semibold text-base px-8 py-3.5 rounded-full hover:bg-[#8f0f11] transition-colors shadow-lg"
           >
             <Phone size={18} className="fill-white" strokeWidth={0} />
