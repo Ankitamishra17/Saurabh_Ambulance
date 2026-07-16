@@ -68,7 +68,7 @@ export default function ServicesHero() {
           transition={{ duration: 0.6, delay: 0.35 }}
           className="mt-4 sm:mt-5 text-base sm:text-lg md:text-xl text-white/90 font-medium max-w-2xl mx-auto px-2 sm:px-0"
         >
-          Trusted emergency ambulance services across Delhi NCR with rapid
+          Trusted emergency ambulance services across New Delhi with rapid
           response, advanced life-support vehicles, and experienced medical
           professionals.
         </motion.p>
