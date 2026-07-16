@@ -13,7 +13,7 @@ const infoCards = [
   {
     icon: Mail,
     title: "Email Us",
-    lines: ["help@saurabhambulance.in", "support@saurabhambulance.in"],
+    lines: ["info@saurabhambulance.in", "support@saurabhambulance.in"],
     href: "mailto:help@saurabhambulance.in",
   },
   {

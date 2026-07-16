@@ -26,7 +26,7 @@ export default function TopBar() {
             className="hidden md:flex items-center gap-1.5 hover:text-[#f2a0a0] transition-colors"
           >
             <Mail size={14} />
-            <span>help@saurabhambulance.in</span>
+            <span>info@saurabhambulance.in</span>
           </a>
         </div>
 

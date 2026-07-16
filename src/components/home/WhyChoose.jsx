@@ -65,7 +65,7 @@ export default function WhyChooseUs() {
 
                 <p className="text-white/80 text-sm mt-2 leading-relaxed">
                   ICU Life Support, Normal Ambulance & Outstation Ambulance
-                  Available Across Delhi NCR.
+                  Available Across New Delhi .
                 </p>
               </div>
 

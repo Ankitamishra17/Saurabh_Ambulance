@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Phone, ShieldCheck, Clock3, Stethoscope } from "lucide-react";
 
+
 const trustPoints = [
   { icon: Clock3, label: "24/7 Availability" },
   { icon: Stethoscope, label: "Trained Paramedics" },
@@ -16,10 +17,13 @@ const BG_IMAGE =
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background image */}
-      <div
+      {/* Background image with slow Ken Burns zoom */}
+      <motion.div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${BG_IMAGE})` }}
+        initial={{ scale: 1 }}
+        animate={{ scale: 1.12 }}
+        transition={{ duration: 12, ease: "easeOut" }}
       />
       {/* Overlay for readability */}
       <div className="absolute inset-0 bg-gradient-to-r from-[#01203f]/95 via-[#01203f]/85 to-[#01203f]/60" />
@@ -52,7 +56,7 @@ export default function Hero() {
 
           <div className="flex flex-wrap items-center gap-4 mt-8">
             <a
-              href="tel:+919996453141"
+              href="tel:+918755696315"
               className="flex items-center gap-2 bg-[#b61416] text-white font-heading font-semibold text-sm md:text-base px-7 py-3.5 rounded-full hover:bg-[#8f0f11] transition-colors shadow-md hover:shadow-lg"
             >
               <Phone size={18} className="fill-white" strokeWidth={0} />

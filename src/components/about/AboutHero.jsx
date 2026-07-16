@@ -52,8 +52,16 @@ export default function AboutHero() {
       <div className="absolute -top-20 -right-20 w-80 h-80 rounded-full bg-[#b61416]/15 blur-3xl" />
       <div className="absolute bottom-0 left-0 w-72 h-72 rounded-full bg-[#b61416]/10 blur-3xl" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 text-center">
-        <span className="about-hero-badge inline-block font-heading font-semibold text-xs md:text-sm text-[#b61416] tracking-[0.15em] uppercase bg-white/10 px-4 py-1.5 rounded-full backdrop-blur-sm">
+      <div className="relative z-10 max-w-7xl mx-auto -mt-32 px-4 md:px-8 text-center">
+         <div className="about-hero-crumb flex items-center justify-center gap-2 mt-7 font-body text-sm text-white/70">
+          <Link href="/" className="hover:text-white transition-colors">
+            Home
+          </Link>
+          <ChevronRight size={14} />
+          <span className="text-white font-medium">About</span>
+        </div>
+        
+        <span className="about-hero-badge mt-8 inline-block font-heading font-semibold text-xs md:text-sm text-[#b61416] tracking-[0.15em] uppercase bg-white/10 px-4 py-1.5 rounded-full backdrop-blur-sm">
           About Saurabh Ambulance
         </span>
 
@@ -63,13 +71,14 @@ export default function AboutHero() {
           Driven By Care.
         </h1>
 
-        <div className="about-hero-crumb flex items-center justify-center gap-2 mt-7 font-body text-sm text-white/70">
-          <Link href="/" className="hover:text-white transition-colors">
-            Home
-          </Link>
-          <ChevronRight size={14} />
-          <span className="text-white font-medium">About</span>
-        </div>
+        <p className="about-hero-description max-w-3xl mx-auto mt-6 text-base md:text-lg text-white/80 leading-relaxed">
+  Saurabh Ambulance has been providing reliable emergency and non-emergency
+  medical transportation services with a commitment to patient safety,
+  rapid response, and compassionate care. Our trained professionals and
+  fully equipped ambulances are available 24/7 to serve patients across
+  Delhi NCR whenever they need us most.
+</p>
+
       </div>
     </section>
   );

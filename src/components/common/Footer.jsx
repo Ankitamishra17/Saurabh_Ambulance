@@ -206,7 +206,7 @@ export default function Footer() {
                 href="mailto:help@saurabhambulance.in"
                 className="font-body text-sm text-white/60 hover:text-white transition-colors break-all"
               >
-                help@saurabhambulance.in
+                info@saurabhambulance.in
               </a>
             </li>
             <li className="flex items-center gap-3">
@@ -221,33 +221,20 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="relative border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-4 md:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="max-w-7xl mx-auto px-4 md:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-4">
           <p className="font-body text-xs text-white/50 text-center sm:text-left">
             © {new Date().getFullYear()} Saurabh Ambulance. All rights reserved.
-            <span className="block sm:inline sm:ml-1">
-              Developed by{" "}
-              <a
-                href="#"
-                className="text-white/70 hover:text-white transition-colors"
-              >
-                Debox Technology
-              </a>
-            </span>
           </p>
-          <div className="flex items-center gap-6">
-            <Link
-              href="/privacy-policy"
-              className="font-body text-xs text-white/50 hover:text-white transition-colors"
+
+          <p className="font-body text-xs text-white/50 text-center sm:text-right">
+            Developed by{" "}
+            <a
+              href="#"
+              className="text-white/70 hover:text-white transition-colors"
             >
-              Privacy Policy
-            </Link>
-            <Link
-              href="/terms"
-              className="font-body text-xs text-white/50 hover:text-white transition-colors"
-            >
-              Terms of Service
-            </Link>
-          </div>
+              Debox Technology
+            </a>
+          </p>
         </div>
       </div>
     </footer>
