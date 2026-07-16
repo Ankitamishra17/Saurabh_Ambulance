@@ -8,7 +8,7 @@ const features = [
   {
     icon: Zap,
     title: "Rapid Response",
-    desc: "Average dispatch time under 15 minutes across Delhi NCR, powered by GPS-tracked routing.",
+    desc: "Average dispatch time under 15 minutes across New Delhi, powered by GPS-tracked routing.",
   },
   {
     icon: BadgeCheck,
@@ -23,7 +23,7 @@ const features = [
   {
     icon: MapPinned,
     title: "Wide Coverage",
-    desc: "Serving Delhi, Noida, Ghaziabad, Greater Noida, and surrounding NCR regions round the clock.",
+    desc: "Serving  Delhi, Noida, Ghaziabad, Greater Noida, and surrounding NCR regions round the clock.",
   },
 ];
 

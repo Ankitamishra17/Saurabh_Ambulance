@@ -55,7 +55,7 @@ export default function Testimonials() {
             Call Log
           </span>
           <h2 className="font-heading font-extrabold text-[#01203f] text-3xl md:text-4xl mt-3">
-            Trusted By Families Across Delhi NCR
+            Trusted By Families Across New Delhi
           </h2>
         </motion.div>
 
