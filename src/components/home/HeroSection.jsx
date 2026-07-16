@@ -38,7 +38,7 @@ export default function Hero() {
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <span className="inline-flex items-center gap-2 bg-white/10 text-[#b61416] font-heading text-nowrap text-[10px] md:text-sm px-4 py-1.5 rounded-full tracking-wide uppercase backdrop-blur-sm">
-            Delhi NCR's Trusted Emergency Response
+            New Delhi Trusted Emergency Response
           </span>
 
           <h1 className="font-heading font-extrabold text-white text-4xl sm:text-5xl lg:text-[3.4rem] leading-[1.12] mt-5">
@@ -50,7 +50,7 @@ export default function Hero() {
 
           <p className="font-body text-white/80 text-base md:text-lg mt-5 max-w-xl leading-relaxed">
             Fully equipped ambulances, trained paramedics, and rapid dispatch
-            across Delhi NCR — available around the clock for emergencies,
+            across New Delhi — available around the clock for emergencies,
             hospital transfers, and scheduled patient transport.
           </p>
 

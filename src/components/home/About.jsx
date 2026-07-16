@@ -26,12 +26,12 @@ export default function About() {
             About Saurabh Ambulance
           </span>
           <h2 className="font-heading font-extrabold text-[#01203f] text-3xl md:text-4xl mt-3 mb-5">
-            Dedicated to Saving Lives Across Delhi NCR
+            Dedicated to Saving Lives Across New Delhi
           </h2>
           <p className="font-body text-gray-600 leading-relaxed mb-4">
             Saurabh Ambulance was founded with a single mission — to make
             emergency medical transport fast, reliable, and accessible to every
-            family in Delhi NCR. What started as a small fleet has grown into a
+            family in New Delhi . What started as a small fleet has grown into a
             trusted network of fully equipped ambulances and trained paramedics.
           </p>
           <p className="font-body text-gray-600 leading-relaxed">

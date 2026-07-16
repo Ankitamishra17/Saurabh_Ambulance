@@ -37,7 +37,7 @@ const socials = [
   { icon: FaInstagram, href: "#", label: "Instagram", color: "#E1306C" },
   {
     icon: FaWhatsapp,
-    href: "https://wa.me/918755696315",
+    href: "https://wa.me/919996453141",
     label: "WhatsApp",
     color: "#25D366",
   },
