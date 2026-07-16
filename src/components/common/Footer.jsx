@@ -64,7 +64,7 @@ export default function Footer() {
               Medical Emergency? Don't Wait.
             </p>
             <p className="font-body text-white/60 text-xs sm:text-sm mt-1">
-              Our team is available 24/7 across Delhi NCR.
+              Our team is available 24/7 across New Delhi .
             </p>
           </div>
           <a

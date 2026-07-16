@@ -30,7 +30,7 @@ export default function Hero() {
       <div className="absolute -top-24 -right-24 w-[420px] h-[420px] rounded-full bg-[#b61416]/15 blur-3xl" />
       <div className="absolute top-1/2 -left-32 w-[380px] h-[380px] rounded-full bg-[#b61416]/10 blur-3xl" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 py-24 grid lg:grid-cols-2 gap-12 items-center w-full">
+      <div className="relative z-10 max-w-7xl mx-auto -mt-16 px-4 md:px-8 py-24 grid lg:grid-cols-2 gap-12 items-center w-full">
         {/* Left: Text content */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}

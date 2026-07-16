@@ -9,7 +9,7 @@ const BG_IMAGE = "/banner1.webp";
 
 const stats = [
   { icon: Camera, label: "Photos" },
-  { icon: Video, label: "Videos" },
+ 
   { icon: Ambulance, label: "Fleet in Action" },
 ];
 
