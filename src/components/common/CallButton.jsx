@@ -6,7 +6,7 @@ export default function FloatingCallButton() {
   return (
     <div className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-[999] group">
       <a
-        href="tel:+918755696315"
+        href="tel:+919996453141"
         aria-label="Call Now"
         className="flex items-center"
       >
