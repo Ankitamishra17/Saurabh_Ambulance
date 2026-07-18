@@ -25,10 +25,10 @@ export default function FloatingCallButton() {
           <span className="absolute inset-0 rounded-full bg-[#b61416] animate-ping opacity-30" />
 
           {/* Outer Circle */}
-          <div className="w-14 h-14 md:w-16 md:h-16 lg:w-18 lg:h-18 rounded-full   flex items-center justify-center">
+          <div className="w-15 h-15 md:w-16 md:h-16 lg:w-18 lg:h-18 rounded-full   flex items-center justify-center">
             {/* Inner Circle */}
-            <div className="w-15 h-15 md:w-15 md:h-15 lg:w-16 lg:h-16 rounded-full bg-[#b61416] flex items-center justify-center">
-              <Phone className="w-5 h-5 md:w-6 md:h-6 text-white" />
+            <div className="w-20 h-16 md:w-20 md:h-20 lg:w-18 lg:h-18 rounded-full bg-[#b61416] flex items-center justify-center">
+              <Phone className="w-6 h-6 md:w-7 md:h-7 text-white" />
             </div>
           </div>
         </div>
