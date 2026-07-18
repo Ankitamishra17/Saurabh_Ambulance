@@ -164,19 +164,19 @@ const services = [
     icon: Users,
     title: "Patient Transfer Service",
     desc: "Professional inter-hospital transfers with continuous monitoring and medical assistance throughout the journey.",
-    image: "/urgentcare8.jpeg",
+    image: "/urgentcare1.jpeg",
   },
   {
     icon: Cross,
     title: "Dead Body Mortuary Van",
     desc: "Respectful and dignified mortuary van services for local and outstation transportation.",
-    image: "/urgentcare2.jpeg",
+    image: "/urgentcare8.jpeg",
   },
   {
     icon: CalendarClock,
     title: "Event Medical Support",
     desc: "Ambulance and paramedic standby services for weddings, sports events, corporate gatherings, and public functions.",
-    image: "/urgentcare1.jpeg",
+    image: "/urgentcare4.jpeg",
   },
 ];
 
