@@ -27,7 +27,7 @@ export default function FloatingCallButton() {
           {/* Outer Circle */}
           <div className="w-14 h-14 md:w-16 md:h-16 lg:w-18 lg:h-18 rounded-full   flex items-center justify-center">
             {/* Inner Circle */}
-            <div className="w-11 h-11 md:w-13 md:h-13 lg:w-15 lg:h-15 rounded-full bg-[#b61416] flex items-center justify-center">
+            <div className="w-15 h-15 md:w-15 md:h-15 lg:w-16 lg:h-16 rounded-full bg-[#b61416] flex items-center justify-center">
               <Phone className="w-5 h-5 md:w-6 md:h-6 text-white" />
             </div>
           </div>
