@@ -176,7 +176,7 @@ const services = [
     icon: CalendarClock,
     title: "Event Medical Support",
     desc: "Ambulance and paramedic standby services for weddings, sports events, corporate gatherings, and public functions.",
-    image: "/urgentcare4.jpeg",
+    image: "/urgentcare11.jpeg",
   },
 ];
 
